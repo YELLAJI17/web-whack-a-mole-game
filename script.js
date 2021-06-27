@@ -8,6 +8,7 @@ let place;
 
 /* --------------- Global --------------- */
 let moleTime = 1000;
+let moleImg = "./mole.PNG";
 
 let showMoleTimer;
 let playingTimeTimer;
@@ -52,7 +53,7 @@ function showMole() {
     const selectedPlace = place[Math.floor(Math.random() *place.length)];
 
     // show mole img
-    selectedPlace.style.backgroundImage = `url("./mole.png")`;
+    selectedPlace.style.backgroundImage = `url(${moleImg})`;
     // after some time remove mole img
     setTimeout(() => {
         selectedPlace.style.backgroundImage=""
