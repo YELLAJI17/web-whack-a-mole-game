@@ -52,7 +52,7 @@ function showMole() {
     const selectedPlace = place[Math.floor(Math.random() *place.length)];
 
     // show mole img
-    selectedPlace.style.backgroundImage = "url(mole.png)";
+    selectedPlace.style.backgroundImage = `url("./mole.png")`;
     // after some time remove mole img
     setTimeout(() => {
         selectedPlace.style.backgroundImage=""
